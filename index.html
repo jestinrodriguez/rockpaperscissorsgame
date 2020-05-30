@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+	<link rel="icon" href="rps.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel='stylesheet' href='style.css'>
+		<style>
+			html {
+					box-sizing: border-box;
+			}
+			*, *:before, *.after {
+					box-sizing: inherit;
+			}
+		</style>
+		<link rel='stylesheet' href='style1.css'>
+  </head>
+  <body>
+		<main>
+			<div class="h1-space">
+				<h1 title="built by CPE42's BEST GROUP">
+					ROCK PAPER SCISSORS
+				</h1>
+			</div>
+			<div>
+				<h2 title="Candao, Elamparo, Leoncito, Rodriguez, Vales"> <section class="human versus">Human</section> <section class="computer versus">Computer</section></h2>
+			</div>
+			<div class="hands-display-bar clearfix">
+				<section class="hands-display versus player1">
+					<img src="pic/blank.png" title="You" id="player1Display"/>
+				</section>
+				<section class="hands-display versus ai">
+					<img src="pic/blank.png" title="AI" id="player2Display"/>
+				</section>
+				
+			</div>
+			<div class="button-bars clearfix">
+				<section class="button-hand-bar versus player1">
+					<button class="choice" onclick="player1Rock()">
+						<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" id="player1Rock" src="pic/rock.png"/></button>
+					<button class="choice" onclick="player1Paper()">
+						<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" id ="player1Paper" src="pic/paper.png"/></button>
+					<button class="choice" onclick="player1Scissors()">
+						<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" id ="player1Scissors" src="pic/scissors.png"/></button>
+				</section>
+				<section class="button-hand-bar versus player2">
+					<button class="choice" onclick="player2Rock()">
+						<img id="player2Rock" src="pic/rock.png"/></button>
+					<button class="choice" onclick="player2Paper()">
+						<img id ="player2Paper" src="pic/paper.png"/></button>
+					<button class="choice" onclick="player2Scissors()">
+						<img id ="player2Scissors" src="pic/scissors.png"/></button>
+			</div>
+
+		</main>
+		<script src="rules.js"></script>
+		<script src="animation.js"></script>
+  </body>
+</html>

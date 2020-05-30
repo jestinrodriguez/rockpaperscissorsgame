@@ -1,0 +1,30 @@
+
+body {
+	width: 100%;
+	margin: 0;
+	background-color: #efefef;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+h1 {
+	font-family: impact;
+	font-size: 10vmin;
+	text-align: center;
+}
+
+h2 {
+	font-family: impact;
+	font-size: 4vmin;
+	text-align: center;
+}
+
+.versus {
+	float: left;
+	width: 50%;
+}
+
